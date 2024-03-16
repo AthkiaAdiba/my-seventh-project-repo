@@ -1,0 +1,130 @@
+[
+    {
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710566840/orlwswkvfwo4sfvauwqb.png",
+        "recipe_id": 1,
+        "recipe_name": "Spaghetti Bolognese",
+        "short_description": "Classic Italian pasta dish with savory meat sauce.",
+        "ingredients": [
+            "500g ground beef",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "Spaghetti noodles",
+            "Garlic",
+            "Tomato sauce"
+        ],
+        "preparing_time": 30,
+        "calories": 600
+    },
+    {
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710567277/skbwxaeefum2s6ikv6b2.png",
+        "recipe_id": 2,
+        "recipe_name": "Chicken Caesar Salad",
+        "short_description": "Classic Italian pasta dish with savory meat sauce.",
+        "ingredients": [
+            "Grilled or cooked chicken breast",
+            "Romaine lettuce",
+            "Parmesan cheese",
+            "Worcestershire sauce",
+            "Black pepper",
+            "Salt"
+        ],
+        "preparing_time": 30,
+        "calories": 200
+    },
+    {
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710567929/ujhy8jotwtjlpgog5cn8.jpg",
+        "recipe_id": 3,
+        "recipe_name": "Fattoush Salad",
+        "short_description": " 2,000 calories a day is used for general nutrition advice, but calorie needs vary.",
+        "ingredients": [
+            "Parmesan Cheese",
+            "Lettuce",
+            "Purslane",
+            "Scallions",
+            "Toasted Bread",
+            "Fattoush Sauce"
+        ],
+        "preparing_time": 50,
+        "calories": 300
+    },
+    {
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710568358/xdsrh9pxuc1c3egoubzv.jpg",
+        "recipe_id": 4,
+        "recipe_name": "Caesar Salad",
+        "short_description": "Crisp romaine lettuce tossed with grilled chicken, savory Caesar dressing.",
+        "ingredients": [
+            "240 gr of Chicken Fillet",
+            "Lettuce",
+            "Parmesan Cheese",
+            "Tomato",
+            "Special Sauce",
+            "Toasted Bread"
+        ],
+        "preparing_time": 40,
+        "calories": 500
+    },
+    {
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710569209/dpfbgzacnocrrvzfgowa.jpg",
+        "recipe_id": 5,
+        "recipe_name": "Kubideh Kebab",
+        "short_description": "Tender and flavorful Kubideh Kebabs, a traditional Persian dish",
+        "ingredients": [
+            "300 gr of Lamb and Veal Kebab",
+            "Tomatoes",
+            "Special Salad",
+            "400 gr of Saffron Rice",
+            "Ground black pepper",
+            "Skewers"
+        ],
+        "preparing_time": 35,
+        "calories": 300
+    },
+    {
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710570162/sr8nqncurok2pn4fqfpr.avif",
+        "recipe_id": 6,
+        "recipe_name": "Pizza",
+        "short_description": "Indulge in a classic pizza, boasting a thin, crispy crust topped with rich tomato sauce.",
+        "ingredients": [
+            "Pizza dough",
+            "Tomato sauce",
+            "Mozzarella cheese",
+            "Olive oil",
+            "Basil leaves",
+            "Italian seasoning"
+        ],
+        "preparing_time": 30,
+        "calories": 400
+    },
+    {
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710570722/du1z8ewl5s2fvvzh9d6i.avif",
+        "recipe_id": 7,
+        "recipe_name": "Colorful Cake",
+        "short_description": "Experience the joy of a vibrant and whimsical colorful cake, a feast for both the eyes and taste buds.",
+        "ingredients": [
+            "All-purpose flour",
+            "Granulated sugar",
+            "Unsalted butter",
+            "Eggs",
+            "Milk",
+            "Food coloring"
+        ],
+        "preparing_time": 40,
+        "calories": 500
+    },
+    {
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710571392/zpdxkrp8dalvgbrhbebl.avif",
+        "recipe_id": 8,
+        "recipe_name": "Noodles",
+        "short_description": "Savor the simplicity and comfort of a warm bowl of noodles",
+        "ingredients": [
+            "Noodles",
+            "Soy sauce",
+            "Sesame oil",
+            "Brown sugar or honey",
+            "Green onions",
+            "Garlic"
+        ],
+        "preparing_time": 35,
+        "calories": 350
+    }
+]
