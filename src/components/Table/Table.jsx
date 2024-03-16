@@ -1,15 +1,15 @@
 import './Table.css';
 import PropTypes from 'prop-types';
 
-const Table = ({ wantCookLists, handleAddToCurrentCookingList, currentCookLists }) => {
+const Table = ({ wantCookLists, handleAddToCurrentCookingList, currentCookLists, totalTime, totalCalories }) => {
     // console.log(wantCookLists)
 
     return (
-        <div className="w-[500px] border-2 border-[#28282833] rounded-xl">
+        <div className="w-full lg:w-[500px] border-2 border-[#28282833] rounded-xl">
             <div>
                 <div className="overflow-x-auto">
                     <h2 className='mt-8 text-center text-2xl font-semibold text-[#282828]'>Want to cook: {wantCookLists.length}</h2>
-                    <div className='divider mx-20'></div>
+                    <div className='divider mx-4 lg:mx-20'></div>
                     <table className="table">
                         {/* head */}
                         <thead>
@@ -29,7 +29,7 @@ const Table = ({ wantCookLists, handleAddToCurrentCookingList, currentCookLists 
                                     <td className='fira-sans text-[#282828b3] text-base'>{wantCookList.preparing_time}</td>
                                     <td className='fira-sans text-[#282828b3] text-base'>{wantCookList.calories}</td>
                                     <div>
-                                        <button onClick={() => handleAddToCurrentCookingList(wantCookList.recipe_id)} className="btn bg-[#0BE58A] rounded-[50px] border-none my-4">Preparing</button>
+                                        <button onClick={() => handleAddToCurrentCookingList(wantCookList.recipe_id, wantCookList.preparing_time, wantCookList.calories)} className="btn bg-[#0BE58A] rounded-[50px] border-none my-4">Preparing</button>
                                     </div>
                                 </tr>)
                             }
@@ -37,7 +37,7 @@ const Table = ({ wantCookLists, handleAddToCurrentCookingList, currentCookLists 
                     </table>
                 </div>
                 <h2 className='mt-8 text-center text-2xl font-semibold text-[#282828]'>Currently cooking: {currentCookLists.length}</h2>
-                <div className='divider mx-20'></div>
+                <div className='divider mx-4 lg:mx-20'></div>
                 <div className="overflow-x-auto">
                     <table className="table">
                         {/* head */}
@@ -63,10 +63,10 @@ const Table = ({ wantCookLists, handleAddToCurrentCookingList, currentCookLists 
                 </div>
                 <div className='mb-5 flex justify-end gap-8 mr-10 mt-4 text-[#878787] text-base'>
                     <div>
-                        <p>Total Time = <br />45 minutes</p>
+                        <p>Total Time = <br />{totalTime} minutes</p>
                     </div>
                     <div>
-                        <p>Total Calories = <br />1050 calories</p>
+                        <p>Total Calories = <br />{totalCalories} calories</p>
                     </div>
                 </div>
             </div>
@@ -75,9 +75,11 @@ const Table = ({ wantCookLists, handleAddToCurrentCookingList, currentCookLists 
 };
 
 Table.propTypes = {
-    wantCookLists: PropTypes.func,
+    wantCookLists: PropTypes.array,
     handleAddToCurrentCookingList: PropTypes.func,
-    currentCookLists: PropTypes.array
+    currentCookLists: PropTypes.array,
+    totalTime: PropTypes.number,
+    totalCalories: PropTypes.number
 }
 
 export default Table;

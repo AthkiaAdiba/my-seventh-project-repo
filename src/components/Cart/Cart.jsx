@@ -9,7 +9,7 @@ const Cart = ({ cart, handleAddWantCookList }) => {
     return (
         <div>
             <div className="card bg-base-100 border-2 border-[#28282833]">
-                <figure className="px-5 pt-5">
+                <figure className="px-3 lg:px-5 pt-5">
                     <img src={recipe_image} alt="Shoes" className="h-[240px] rounded-xl w-full" />
                 </figure>
                 <div className="card-body">

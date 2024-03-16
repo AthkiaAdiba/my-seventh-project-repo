@@ -6,7 +6,7 @@ const Banner = () => {
                 <div className="hero-overlay bg-opacity-15"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="w-full">
-                        <h1 className="mb-5 text-4xl font-bold text-white">Discover an exceptional cooking <br /> class tailored for you!</h1>
+                        <h1 className="mb-5 text-2xl lg:text-4xl font-bold text-white">Discover an exceptional cooking <br /> class tailored for you!</h1>
                         <p className="mb-5 text-center text-lg text-white"> we pride ourselves on offering a culinary experience that tantalizes the senses and delights the palate. <br />Our menu is a celebration of flavor, crafted with passion and creativity by our team of talented chefs.</p>
                         <div>
                             <button className="btn bg-[#0BE58A] rounded-[50px] border-none mr-5">Explore Now</button>

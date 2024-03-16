@@ -11,11 +11,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [wantCookLists, setWantCookList] = useState([]);
-  const [currentCookLists, setCurrentCookList] = useState([])
+  const [currentCookLists, setCurrentCookList] = useState([]);
+  const [totalTime, setTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0)
 
   const handleAddWantCookList = (cart, id) => {
-    // console.log(id)
-    // console.log(cart)
+    
     const isExist = wantCookLists.find(list => list.recipe_id === id)
     if(!isExist){
       setWantCookList([...wantCookLists, cart])
@@ -23,24 +24,32 @@ function App() {
     else{
       toast("Already exist")
     }
-    
-    // console.log(newLists)
   }
 
-  const handleAddToCurrentCookingList = (id) => {
-    // console.log(id)
+  const handleAddToCurrentCookingList = (id, time, calories) => {
+    
     const newWantList = wantCookLists.filter(item => item.recipe_id !== id)
-    // console.log(newWantList)
     setWantCookList(newWantList);
-    // const currentList = wantCookLists.map(item => item.recipe_id === id)
-    // setCurrentCookList(currentList)
-    console.log('current')
+
+    // set Current Cook List
+    const newCurrentList = wantCookLists.find(item => item.recipe_id === id)
+    setCurrentCookList([...currentCookLists, newCurrentList])
+
+    // sum of preparing time
+    setTime((prevTime) => prevTime + time)
+
+    // sum total calories
+    setTotalCalories((prevcalories) => prevcalories + calories)
     
   }
+  // console.log('clicked',totalTime)
+  // console.log(totalCalories)
 
+  
+  
   return (
     <>
-      <div className='mx-[80px] mt-14'>
+      <div className='mx-4 lg:mx-[80px] mt-14'>
         <Nevber></Nevber>
         <Banner></Banner>
         <Carts 
@@ -48,6 +57,8 @@ function App() {
         wantCookLists={wantCookLists}
         handleAddToCurrentCookingList={handleAddToCurrentCookingList}
         currentCookLists={currentCookLists}
+        totalTime={totalTime}
+        totalCalories={totalCalories}
         ></Carts>
       </div>
       <ToastContainer />
@@ -56,3 +67,7 @@ function App() {
 }
 
 export default App
+
+// const totalMoney = data.reduce((total, obj) => {
+  //   return total + obj.money;
+  // }, 0);

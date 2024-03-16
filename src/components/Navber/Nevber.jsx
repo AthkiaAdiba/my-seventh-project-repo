@@ -4,7 +4,7 @@ import profile2 from '../../assets/image/search.png'
 const Nevber = () => {
     return (
         <div>
-            <div className='flex items-center justify-between'>
+            <div className='space-y-4 lg:space-y-0 flex flex-col lg:flex-row items-center justify-between'>
                 <h1 className="text-3xl font-bold text-[#150B2B]">Recipe Calories</h1>
                 <div className="flex items-center gap-6">
                     <p className="text-base text-[#150b2bb3]">Home</p>
