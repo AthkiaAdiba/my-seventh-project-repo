@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Table from "../Table/Table";
+import PropTypes from 'prop-types';
 
 
-const Carts = () => {
+const Carts = ({handleAddWantCookList, wantCookLists, handleAddToCurrentCookingList, currentCookLists}) => {
     const [carts, setCarts] = useState([]);
 
     useEffect(() => {
@@ -15,19 +16,30 @@ const Carts = () => {
     return (
         <div>
             <h1 className="mb-6 text-[40px] font-semibold text[#150B2B] text-center">Our Recipes</h1>
-            <p className="mb-12 text-base text-[#150b2b99] text-center">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget <br /> urna volutpat curabitur elementum mauris aenean neque. </p>
-            <div className="flex gap-6">
+            <p className="mb-12 text-base text-[#150b2b99] text-center"> we believe that great food is meant to be shared, cherished, and savored together. Our menu is a testament to this philosophy, <br />offering a diverse array of recipes inspired by global flavors and crafted with passion by our team of skilled chefs.</p>
+            <div className="flex gap-6 mb-20">
                 <div className="grid grid-cols-2 gap-4">
                     {
-                        carts.map(cart => <Cart cart={cart}></Cart>)
+                        carts.map(cart => <Cart key={cart.id} cart={cart} handleAddWantCookList={handleAddWantCookList}></Cart>)
                     }
                 </div>
                 <div>
-                    <Table></Table>
+                    <Table 
+                    wantCookLists={wantCookLists} 
+                    handleAddToCurrentCookingList={handleAddToCurrentCookingList}
+                    currentCookLists={currentCookLists}
+                    ></Table>
                 </div>
             </div>
         </div>
     );
 };
+
+Carts.propTypes = {
+    handleAddWantCookList: PropTypes.func,
+    wantCookLists: PropTypes.array,
+    handleAddToCurrentCookingList: PropTypes.func,
+    currentCookLists: PropTypes.array
+}
 
 export default Carts;
