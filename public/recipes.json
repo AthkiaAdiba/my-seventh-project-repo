@@ -1,9 +1,9 @@
 [
     {
-        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710566840/orlwswkvfwo4sfvauwqb.png",
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710567277/skbwxaeefum2s6ikv6b2.png",
         "recipe_id": 1,
         "recipe_name": "Spaghetti Bolognese",
-        "short_description": "Classic Italian pasta dish with savory meat sauce.",
+        "short_description": "Spaghetti Bolognese is a popular Italian pasta dish featuring spaghetti noodles topped with a savory meat sauce made with ground beef.",
         "ingredients": [
             "500g ground beef",
             "1 onion, chopped",
@@ -16,10 +16,10 @@
         "calories": 600
     },
     {
-        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710567277/skbwxaeefum2s6ikv6b2.png",
+        "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710566840/orlwswkvfwo4sfvauwqb.png",
         "recipe_id": 2,
         "recipe_name": "Chicken Caesar Salad",
-        "short_description": "Classic Italian pasta dish with savory meat sauce.",
+        "short_description": "Chicken Caesar Salad is a classic salad consisting of crisp romaine lettuce tossed with grilled chicken breast.",
         "ingredients": [
             "Grilled or cooked chicken breast",
             "Romaine lettuce",
@@ -35,7 +35,7 @@
         "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710567929/ujhy8jotwtjlpgog5cn8.jpg",
         "recipe_id": 3,
         "recipe_name": "Fattoush Salad",
-        "short_description": " 2,000 calories a day is used for general nutrition advice, but calorie needs vary.",
+        "short_description": "Fattoush Salad is typically dressed with a tangy combination of olive oil, lemon juice, and garnished with herbs like mint and parsley.",
         "ingredients": [
             "Parmesan Cheese",
             "Lettuce",
@@ -58,7 +58,8 @@
             "Parmesan Cheese",
             "Tomato",
             "Special Sauce",
-            "Toasted Bread"
+            "Toasted Bread",
+            "Lemon juice"
         ],
         "preparing_time": 40,
         "calories": 500
@@ -67,7 +68,7 @@
         "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710569209/dpfbgzacnocrrvzfgowa.jpg",
         "recipe_id": 5,
         "recipe_name": "Kubideh Kebab",
-        "short_description": "Tender and flavorful Kubideh Kebabs, a traditional Persian dish",
+        "short_description": "Tender and flavorful Kubideh Kebabs, a traditional Persian dish.",
         "ingredients": [
             "300 gr of Lamb and Veal Kebab",
             "Tomatoes",
@@ -115,7 +116,7 @@
         "recipe_image": "https://res.cloudinary.com/dv6fgvj2c/image/upload/v1710571392/zpdxkrp8dalvgbrhbebl.avif",
         "recipe_id": 8,
         "recipe_name": "Noodles",
-        "short_description": "Savor the simplicity and comfort of a warm bowl of noodles",
+        "short_description": "Savor the simplicity and comfort of a warm bowl of noodles.",
         "ingredients": [
             "Noodles",
             "Soy sauce",
