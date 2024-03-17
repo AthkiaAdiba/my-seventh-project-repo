@@ -68,6 +68,3 @@ function App() {
 
 export default App
 
-// const totalMoney = data.reduce((total, obj) => {
-  //   return total + obj.money;
-  // }, 0);
