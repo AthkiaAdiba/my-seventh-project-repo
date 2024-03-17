@@ -26,8 +26,9 @@ function App() {
     }
   }
 
+  
   const handleAddToCurrentCookingList = (id, time, calories) => {
-    
+
     const newWantList = wantCookLists.filter(item => item.recipe_id !== id)
     setWantCookList(newWantList);
 
